@@ -45,7 +45,7 @@
         </q-card>
         <div class="bg-yellow-theme brands row items-center justify-between q-px-xl full-width q-mt-xl" style="height:100px">
             <div  v-for="brand in 6">
-                <img style="width:100px" :src="'src/assets/brand'+brand+'.png'"/>
+                <img style="width:100px" :src="'brand'+brand+'.png'"/>
             </div>
         </div>
     </div>

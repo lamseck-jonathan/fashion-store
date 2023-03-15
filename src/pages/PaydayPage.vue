@@ -1,22 +1,37 @@
 <template>
-    <div class="bg-payday window-height row justify-between">
-        <div class="relative col">
+    <div class="bg-payday min-window-height row justify-between q-pt-xl">
+        <div class="image-container relative col-12 col-md-6 order-last lt-md items-center justify-center">
             <div class="relative">
-                <img class="star5" src="../assets/star.png"/>
+                <img class="star9" src="../assets/star.png"/>
             </div>
             <div class="relative">
-                <img class="star6" src="../assets/star.png"/>
+                <img class="star10" src="../assets/star.png"/>
             </div>
             <div class="relative">
-                <img class="star7" src="../assets/star.png"/>
+                <img class="star11" src="../assets/star.png"/>
             </div>
             <div class="relative">
-                <img class="star8" src="../assets/star.png"/>
+                <img class="star12" src="../assets/star.png"/>
+            </div>
+            <img class="payday-women" style="width:350px" src="../assets/payday-women2.png"/>
+        </div>
+        <div class="relative col-12 col-md-6 gt-sm items-center justify-center">
+            <div class="relative">
+                <img class="star9" src="../assets/star.png"/>
+            </div>
+            <div class="relative">
+                <img class="star10" src="../assets/star.png"/>
+            </div>
+            <div class="relative">
+                <img class="star11" src="../assets/star.png"/>
+            </div>
+            <div class="relative">
+                <img class="star12" src="../assets/star.png"/>
             </div>
             <img class="payday-women" style="width:550px" src="../assets/payday-women2.png"/>
         </div>
-        <div class="relative col column items-start justify-center">
-            <div style="width:500px">
+        <div class="relative col-12 col-md-6 q-pb-xl column items-md-start items-center justify-center">
+            <div class="payday-container">
                 <div class="relative main-font hero-text">
                     <span class="text-block3 bg-white"></span>
                     <div class="lets-word">
@@ -56,23 +71,120 @@
     .relative{
         position: relative;
     }
+    .image-container{
+        height: 350px !important;
+    }
+    .payday-container{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+    }
     .payday-women{
         position: absolute;
         bottom: 0;
-        left: 100px;
+        left: 0;
     }
     .payday-text{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 500;
-        font-size: 25px;
+        font-size: 18px;
         line-height: 25px;
     }
     .payday-text1{
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 800;
-        font-size: 25px;
+        font-size: 18px;
         line-height: 25px;
+    }
+    .relative{
+        position: relative;
+    }
+    .star9{
+        position: absolute;
+        left:19%;
+        top:7%;
+    }
+    .star10{
+        position: absolute;
+        top:200px;
+        left:10%;
+    }
+    .star11{
+        position: absolute;
+        top:70px;
+        left: 75%;
+    }
+    .star12{
+        position: absolute;
+        top:250px;
+        left: 72%;
+    }
+    .star13{
+        position: absolute;
+        top:100px;
+        left:200px;
+    }
+    .star14{
+        position: absolute;
+        top:330px;
+        left:230px;
+    }
+    .star15{
+        position: absolute;
+        top:130px;
+        left: 500px;
+    }
+    .star16{
+        position: absolute;
+        top:400px;
+        left: 550px;
+    }
+    @media (min-width:600px) {
+        .payday-text{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 25px;
+        }
+        .payday-text1{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 25px;
+            line-height: 25px;
+        }
+        .payday-women{
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+        }
+        .payday-container{
+            width:500px;
+        }
+        .star9{
+            position: absolute;
+            left:48%;
+            top:30px;
+        }
+        .star10{
+            position: absolute;
+            top:290px;
+            left:35%;
+        }
+        .star11{
+            position: absolute;
+            top:100px;
+            left: 85%;
+        }
+        .star12{
+            position: absolute;
+            top:350px;
+            left: 90%;
+        }
     }
 </style>

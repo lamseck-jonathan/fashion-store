@@ -1,11 +1,11 @@
 <template>
     <div  
-    :style="isClothe ? 'width:300px;' : 'width:500px'"  
+    :class="isClothe ? 'clothe-sm' : 'clothe-lg'"
     class="column q-gutter-sm"
     >
         <div>
             <img 
-            :style="isClothe ? 'width:300px;' : 'width:500px'" 
+            :class="isClothe ? 'clothe-sm' : 'clothe-lg'" 
             :src="image"/>
         </div> 
         <div class="row items-center justify-between">
@@ -42,5 +42,21 @@ const props = defineProps({
 </script>
 
 <style>
+.clothe-sm{
+    width:250px;
+}
 
+.clothe-lg{
+    width: 300px;
+}
+
+@media (min-width:600px) {
+    .clothe-sm{
+        width: 300px;
+    }
+
+    .clothe-lg{
+        width: 500px;
+    }
+}
 </style>

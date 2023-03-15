@@ -30,13 +30,13 @@ import NewsletterPage from './NewsletterPage.vue';
 }
 .title1{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 25px;
     line-height: 50px;
     letter-spacing: 0.06em;
 }
 .hero-text{
     font-weight: 900;
-    font-size: 70px;
+    font-size: 40px;
     line-height: 70px;
 }
 .bg-yellow-theme{
@@ -44,5 +44,19 @@ import NewsletterPage from './NewsletterPage.vue';
 }
 .min-window-height{
     min-height: 100vh;
+}
+
+@media (min-width: 600px) {
+    .title1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.06em;
+    }
+    .hero-text{
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+    }
 }
 </style>

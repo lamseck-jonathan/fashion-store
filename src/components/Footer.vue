@@ -2,7 +2,7 @@
     <div class="row justify-center">
       <div class="col-12 col-md-5 row justify-center q-my-lg q-my-md-none">
         <div class="q-gutter-y-sm">
-          <img src="../assets/logo_white.png"/>
+          <img class="footer-logo" src="../assets/logo_white.png"/>
           <div>
             Complete your style with awesome <br/>clothes from us.
           </div>
@@ -62,3 +62,15 @@
 
 <script setup lang="ts">
 </script>
+
+<style>
+.footer-logo{
+    width: 250px;
+}
+
+@media (min-width:600px) {
+    .footer-logo{
+        width: 300px;
+    }
+}
+</style>

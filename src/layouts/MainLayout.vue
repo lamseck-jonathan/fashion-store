@@ -2,7 +2,22 @@
     <q-layout view="hhh lpr fff">
   
       <q-header class="bg-white text-black" height-hint="98">
-        <q-toolbar class="row q-gutter-x-lg" style="height:75px" >
+        <q-toolbar class="row q-gutter-x-lg gt-sm" style="height:75px" >
+          <img class="main-logo" src="../assets/logo.png"/>
+          <q-space/>
+          <div class="row q-gutter-x-lg gt-sm">
+            <q-btn to="#home" flat label="Home"/>
+            <q-btn to="#new_arrival" flat label="Fashion"/>
+            <q-btn to="#payday" flat label="Promotion"/>
+            <q-btn to="#favorite" flat label="Favourite"/>
+            <q-btn to="#download" flat label="Donwload"/>
+            <q-btn color="black" label="Sign up"/>
+          </div>
+          <div class="lt-md">
+            <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
+          </div>
+        </q-toolbar>
+        <q-toolbar class="bg-white text-black full-width fixed row q-gutter-x-lg lt-md" style="height:78px" >
           <img class="main-logo" src="../assets/logo.png"/>
           <q-space/>
           <div class="row q-gutter-x-lg gt-sm">
@@ -22,11 +37,44 @@
         <div class="column items-center justify-center q-gutter-md">
           <div class="q-py-lg text-subtitle1">Menu</div>
           <QSeparator color="black"/>
-          <q-btn flat label="Catalogue"/>
-          <q-btn flat label="Fashion"/>
-          <q-btn flat label="Favourite"/>
-          <q-btn flat label="Lifestyle"/>
-          <q-btn color="black" label="Sign up"/>
+          <q-btn 
+              @click="toggleRightDrawer" 
+              class="text-center" 
+              to="#home" 
+              flat 
+              label="Home"
+          />
+          <q-btn 
+              @click="toggleRightDrawer" 
+              class="text-center" 
+              to="#new_arrival" 
+              flat 
+              label="Fashion"
+          />
+          <q-btn @click="toggleRightDrawer" 
+              class="text-center" 
+              to="#payday" 
+              flat 
+              label="Promotion"
+          />
+          <q-btn @click="toggleRightDrawer" 
+              class="text-center" 
+              to="#favorite" 
+              flat 
+              label="Favourite"
+          />
+          <q-btn @click="toggleRightDrawer" 
+              class="text-center" 
+              to="#download" 
+              flat 
+              label="Donwload"
+          />
+          <q-btn 
+              @click="toggleRightDrawer" 
+              class="text-center" 
+              color="black" 
+              label="Sign up"
+          />
         </div>
       </q-drawer>
       <q-page-container>

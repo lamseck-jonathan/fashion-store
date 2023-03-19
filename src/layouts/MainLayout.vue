@@ -1,15 +1,16 @@
 <template>
-    <q-layout view="hh lpr fff">
+    <q-layout view="hhh lpr fff">
   
       <q-header class="bg-white text-black" height-hint="98">
         <q-toolbar class="row q-gutter-x-lg" style="height:75px" >
           <img class="main-logo" src="../assets/logo.png"/>
           <q-space/>
           <div class="row q-gutter-x-lg gt-sm">
-            <q-btn flat label="Catalogue"/>
-            <q-btn flat label="Fashion"/>
-            <q-btn flat label="Favourite"/>
-            <q-btn flat label="Lifestyle"/>
+            <q-btn to="#home" flat label="Home"/>
+            <q-btn to="#new_arrival" flat label="Fashion"/>
+            <q-btn to="#payday" flat label="Promotion"/>
+            <q-btn to="#favorite" flat label="Favourite"/>
+            <q-btn to="#download" flat label="Donwload"/>
             <q-btn color="black" label="Sign up"/>
           </div>
           <div class="lt-md">

@@ -1,11 +1,23 @@
 <template>
     <div class="min-window-height">
-        <HomePage/>
-        <NewArrivalPage/>
-        <PaydayPage/>
-        <FavoritePage/>
-        <DownloadPage/>
-        <NewsletterPage/>
+        <section id="home">
+            <HomePage/>
+        </section>
+        <section id="new_arrival">
+            <NewArrivalPage/>
+        </section>
+        <section id="payday">
+            <PaydayPage/>
+        </section>
+        <section id="favorite">
+            <FavoritePage/>
+        </section>
+        <section id="download">
+            <DownloadPage/>
+        </section>
+        <section id="newsletter">
+            <NewsletterPage/>
+        </section>
     </div>
 </template>
 

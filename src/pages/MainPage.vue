@@ -29,7 +29,6 @@ import PaydayPage from './PaydayPage.vue';
 import DownloadPage from './DonwloadPage.vue'
 import NewsletterPage from './NewsletterPage.vue';
 
-
 </script>
 
 <style>
